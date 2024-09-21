@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: auto;
+}
+
+/* Styling the header */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Navigation styling for larger screens */
+#leftsidebar {
+    width: 30%;
+    float: left;
+    background-color: #CDF0F6;
+    padding: 10px;
+    height: 100vh;
+}
+
+#menulist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuitem {
+    background: #CDF0F6;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 55px;
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+/* Main content styling */
+#main {
+    margin-left: 35%;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    #leftsidebar {
+        width: 100%;
+        float: none;
+        padding: 0;
+        height: 0;
+    }
+
+    #menulist {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuitem {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Main content should occupy full width on small screens */
+    #main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Styling for the calculator section */
+section h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+section input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 18px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #45a049;
+}
+
+section button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+section h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* For smaller screens */
+@media (max-width: 750px) {
+    section input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    section button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
